@@ -6,6 +6,7 @@ import Product from './Products/Products';
 import Home from './Home/Home';
 import Orders from './Orders/Orders';
 import OrderDetail from './Orders/OrderDetails';
+import Payment from './Payment/Payment';
 
 function App() {
   const openMenu = () => {
@@ -36,6 +37,7 @@ function App() {
                             <Link to="/">Home</Link>
                             <Link to="/catalog">Catalog</Link>
                             <Link to="/orders">Orders</Link>
+                            <Link to="/payment">Payment</Link>
                         </div>
                     </header>
                     <aside className = "sidebar">
@@ -64,6 +66,9 @@ function App() {
                             </Route>
                             <Route path="/order/:id">
                                 <OrderDetail />
+                            </Route>
+                            <Route path="/payment">
+                                <Payment />
                             </Route>
                         </Switch>
                     </main>
